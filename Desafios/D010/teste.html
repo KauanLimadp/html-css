@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 30px;
+            font-weight: 600;
+            line-height: 1.5;
+        } 
+        
+        .card{
+            border-radius: 30px;
+            max-width: 500px;
+            box-shadow: 0 0  30px 20px #f9f9f9;
+            transform: rotate(-7deg);
+            overflow: hidden;
+            padding: 30px 0 0 0;
+            transition: transform .3s;
+        }
+
+        .card:hover{
+            transform: rotate(0);
+        }
+
+        .card_text{
+            padding: 0 40px;
+        }
+
+        .card_footer{
+            display: flex;
+            align-items: center;
+            background: #8737bd;
+            background: linear-gradient(90deg, rgba(135, 55, 189, 1) 0%, rgba(184, 144, 224, 1) 32%, rgba(191, 181, 199, 1) 100%);
+            padding: 30px 40px;
+        }
+
+        .card_footer img{
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            border: 5px solid white;
+            margin-right: 30px;
+            transition: transform .3s;
+        }
+        .card:hover img{
+            transform: scale(1.3);
+        }
+
+        .card_footer p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <p class="card_text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, delectus. Odio veritatis repellendus ex consequuntur quam illum non voluptatibus provident.
+        </p>
+        <footer class="card_footer">
+        <img src="lego.png" alt="">
+        <p>Mario Bros</p>
+        </footer>
+    </section>
+
+    
+</body>
+</html>
